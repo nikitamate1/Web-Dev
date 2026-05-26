@@ -3,24 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <title>Food Order Form</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
 	  <form>
 		  <fieldset>
 			  <!-- The fieldset tag is used to group related elements in a form and draws a box around them-->
-			  <legend>Personal Information:</legend>
-			  <label>Full name:</label>
+			  <legend>Food Order Information:</legend>
+
+			  <label>Customer Name:</label>
 			  <!--placeholder attribute can be used to provide extra information about entry to be made-->
-			  <input type="text" id="fname" placeholder="Enter Name"><br><br>
-			  <label>Email:</label>
+			  <input type="text" id="fname" placeholder="Enter Customer Name"><br><br>
+
+			  <label>Email Address:</label>
 			  <input type="text" id="email"><br><br>
-			  <label>Gender:</label><br>
-			  <input type="radio" id="gender" value="female">Female<br>
-			  <input type="radio" id="gender" value="male">Male<br><br>
-			  <label>Birthday:</label>
+
+			  <label>Meal Preference:</label><br>
+			  <input type="radio" id="gender" value="vegetarian">Vegetarian<br>
+			  <input type="radio" id="gender" value="nonvegetarian">Non-Vegetarian<br><br>
+
+			  <label>Delivery Date:</label>
 			  <input type="date" id="birthday" name="birthday"><br><br>
+
 		  </fieldset>
 	  </form>
   </body>

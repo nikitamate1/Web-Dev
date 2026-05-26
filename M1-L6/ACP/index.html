@@ -4,33 +4,44 @@
 
 <body>
 
-  <h1>Details of Users</h1>
+  <h1>Food Order Details</h1>
 
   <form>
     <fieldset>
-      <legend>Personal Information:</legend>
-      <label>First name:</label>
+      <legend>Food Information:</legend>
+
+      <label>Customer First Name:</label>
       <input type="text" id="fname" name="fname"><br><br>
-      <label>Last name:</label>
+
+      <label>Customer Last Name:</label>
       <input type="text" id="lname" name="lname"><br><br>
-      <label>Gender:</label><br><br>
-      <input type="radio" name="subject" value="Male"> Male<br><br>
-      <input type="radio" name="subject" value="Female"> Female<br><br>
-      <input type="radio" name="subject" value="Other"> Other<br><br>
-      <label for="email">Email:</label>
+
+      <label>Food Preference:</label><br><br>
+
+      <input type="radio" name="subject" value="Veg"> Vegetarian<br><br>
+      <input type="radio" name="subject" value="NonVeg"> Non-Vegetarian<br><br>
+      <input type="radio" name="subject" value="Dessert"> Desserts<br><br>
+
+      <label for="email">Email Address:</label>
       <input type="email" id="email" name="email"><br><br>
-      <label for="email">Password:</label>
+
+      <label for="email">Order Password:</label>
       <input type="password" name="password"><br><br>
-      <label for="birthday">Birthday:</label>
+
+      <label for="birthday">Delivery Date:</label>
       <input type="date" id="birthday" name="birthday"><br><br>
-      <label for="email">Address:</label><br />
-      <textarea rows="5" cols="50" name="description">Enter description here...</textarea><br><br>
-      <label for="email">Image:</label><br><br>
+
+      <label for="email">Delivery Address:</label><br />
+      <textarea rows="5" cols="50" name="description">Enter your address here...</textarea><br><br>
+
+      <label for="email">Upload Favourite Food Image:</label><br><br>
       <input type="file" name="fileupload" accept="image/*" /><br><br><br><br>
+
       <center>
-        <input type="submit" name="submit" value="Submit" />
-        <input type="reset" name="reset" value="Reset" />
+        <input type="submit" name="submit" value="Place Order" />
+        <input type="reset" name="reset" value="Clear Form" />
       </center>
+
     </fieldset>
   </form>
 
