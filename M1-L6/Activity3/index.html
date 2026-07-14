@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My Food Order</title>
+  </head>
+  <body>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Food Ratings</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+    <h1>🍔 My Food Order</h1>
+    <p>Fill in the form below to place your food order!</p>
+    <hr>
 
-<body>
-	<fieldset>
-		<legend><b>Rate Your Favourite Foods</b></legend>
+    <form>
 
-		<form action="/action_page.php"
-			oninput="x.value=(parseInt(m1.value)+parseInt(m2.value)+parseInt(m3.value))/3">
+      <fieldset>
+        <legend>Customer Details</legend>
 
-			<label>Customer Name</label><br>
-			<input type="text" id="name"><br><br>
+        <label>Your Name</label><br>
+        <input type="text" id="name" placeholder="Enter your full name"><br><br>
 
-			<label>Give Food Ratings</label><br>
+        <label>Coupon Code</label><br>
+        <input type="password" id="coupon" placeholder="Enter your coupon code"><br><br>
 
-			<select name="Subject" id="subject">
-				<option value="Pizza">Pizza</option>
-				<option value="Burger">Burger</option>
-				<option value="Dessert">Dessert</option>
-			</select>
-			<input type="number" id="m1" name="m1"><br><br>
+        <label>Order Date</label><br>
+        <input type="date" id="date"><br>
 
-			<select name="Subject2" id="subject2">
-				<option value="Pizza">Pizza</option>
-				<option value="Burger">Burger</option>
-				<option value="Dessert">Dessert</option>
-			</select>
-			<input type="number" id="m2" name="m2"><br><br>
+      </fieldset>
 
-			<select name="Subject3" id="subject3">
-				<option value="Pizza">Pizza</option>
-				<option value="Burger">Burger</option>
-				<option value="Dessert">Dessert</option>
-			</select>
-			<input type="number" id="m3" name="m3"><br><br>
+      <br>
 
-			Average Rating:
-			<output name="x" for="m1 m2 m3"></output>
+      <fieldset>
+        <legend>Your Order</legend>
 
-		</form>
-	</fieldset>
-</body>
+        <label>Choose Your Meal</label><br>
+        <select id="meal">
+          <option value="">-- Select a meal --</option>
+          <option value="pizza">Pizza</option>
+          <option value="burger">Burger</option>
+          <option value="pasta">Pasta</option>
+        </select><br><br>
 
+        <label>Meal Type</label><br>
+        <input type="radio" name="mealtype" value="veg"> Vegetarian<br>
+        <input type="radio" name="mealtype" value="nonveg"> Non-Vegetarian<br><br>
+
+        <label>Special Instructions</label><br>
+        <textarea id="notes" rows="3" cols="35" placeholder="e.g. Less spicy, extra cheese."></textarea><br>
+
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>Extra Items</legend>
+
+        <input type="checkbox" value="fries"> French Fries<br>
+        <input type="checkbox" value="drink"> Soft Drink<br>
+        <input type="checkbox" value="dessert"> Dessert<br>
+
+      </fieldset>
+
+      <br>
+      <input type="submit" value="Place My Order">
+
+    </form>
+
+  </body>
 </html>

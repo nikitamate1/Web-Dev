@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Food Form</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
     <h1>Food Preferences Form</h1>
 
     <form>
-      <label>Customer Name</label><br>
-      <input type="text" id="name"><br><br>
 
-      <label>Email Address</label><br>
-      <input type="text" id="email"><br><br>
+        <label for="name">Customer Name</label><br>
+        <input type="text" id="name" name="name"><br><br>
 
-      <label>Secret Food Coupon Code</label><br>
-      <input type="password" id="contact"><br><br>
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" name="email"><br><br>
 
-      <label>Favourite Meal Type</label><br>
-      <input type="radio" id="female" name="gender" value="Vegetarian">Vegetarian<br>
-      <input type="radio" id="male" name="gender" value="Non-Vegetarian">Non-Vegetarian<br><br>
+        <label for="coupon">Secret Food Coupon Code</label><br>
+        <input type="password" id="coupon" name="coupon"><br><br>
 
-      <label>Favourite Food</label><br>
-      <input type="checkbox" id="city" value="Pizza">Pizza<br>
-      <input type="checkbox" id="city" value="Burger">Burger<br><br>
+        <label>Favourite Meal Type</label><br>
 
-      <input type="submit">
+        <input type="radio" id="vegetarian" name="meal" value="Vegetarian">
+        <label for="vegetarian">Vegetarian</label><br>
+
+        <input type="radio" id="nonvegetarian" name="meal" value="Non-Vegetarian">
+        <label for="nonvegetarian">Non-Vegetarian</label><br><br>
+
+        <label>Favourite Food</label><br>
+
+        <input type="checkbox" id="pizza" name="food" value="Pizza">
+        <label for="pizza">Pizza</label><br>
+
+        <input type="checkbox" id="burger" name="food" value="Burger">
+        <label for="burger">Burger</label><br><br>
+
+        <input type="submit" value="Submit">
+
     </form>
 
-  </body>
+</body>
 </html>
