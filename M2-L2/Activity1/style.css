@@ -16,8 +16,8 @@ body {
 .page-header {
     background-image: linear-gradient(
         to right,
-        rgb(120, 80, 255),
-        rgb(255, 100, 150)
+        rgb(58, 17, 192),
+        rgb(209, 19, 79)
     );
     border-radius: 16px;
     padding: 20px;
