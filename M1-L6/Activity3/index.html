@@ -3,65 +3,67 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>My Food Order</title>
+    <title>My Doctor's Appointment</title>
   </head>
   <body>
 
-    <h1>🍔 My Food Order</h1>
-    <p>Fill in the form below to place your food order!</p>
+    <h1>🏥 My Doctor's Appointment</h1>
+    <p>Fill in the form below to book your appointment!</p>
     <hr>
 
     <form>
 
       <fieldset>
-        <legend>Customer Details</legend>
+        <legend>Personal Details</legend>
 
         <label>Your Name</label><br>
         <input type="text" id="name" placeholder="Enter your full name"><br><br>
 
-        <label>Coupon Code</label><br>
-        <input type="password" id="coupon" placeholder="Enter your coupon code"><br><br>
+        <label>Patient ID</label><br>
+        <input type="password" id="pid" placeholder="Your secret ID"><br><br>
 
-        <label>Order Date</label><br>
-        <input type="date" id="date"><br>
+        <label>Date of Birth</label><br>
+        <input type="date" id="dob"><br>
 
       </fieldset>
 
       <br>
 
       <fieldset>
-        <legend>Your Order</legend>
+        <legend>Your Visit</legend>
 
-        <label>Choose Your Meal</label><br>
-        <select id="meal">
-          <option value="">-- Select a meal --</option>
-          <option value="pizza">Pizza</option>
-          <option value="burger">Burger</option>
-          <option value="pasta">Pasta</option>
+        <label>Choose your Doctor</label><br>
+        <select id="doctor">
+          <option value="">-- Select a doctor --</option>
+          <option value="dr-ray">Dr. Ray — General</option>
+          <option value="dr-lee">Dr. Lee — Teeth</option>
+          <option value="dr-sam">Dr. Sam — Eyes</option>
         </select><br><br>
 
-        <label>Meal Type</label><br>
-        <input type="radio" name="mealtype" value="veg"> Vegetarian<br>
-        <input type="radio" name="mealtype" value="nonveg"> Non-Vegetarian<br><br>
+        <label>Why are you visiting?</label><br>
+        <input type="radio" name="reason" value="fever"> Fever<br>
+        <input type="radio" name="reason" value="cold"> Cold<br>
+        <input type="radio" name="reason" value="checkup"> Checkup<br>
+        <input type="radio" name="reason" value="tooth"> Tooth Pain<br><br>
 
-        <label>Special Instructions</label><br>
-        <textarea id="notes" rows="3" cols="35" placeholder="e.g. Less spicy, extra cheese."></textarea><br>
+        <label>Any notes for the doctor?</label><br>
+        <textarea id="notes" rows="3" cols="35" placeholder="e.g. I have had a sore throat for 2 days."></textarea><br>
 
       </fieldset>
 
       <br>
 
       <fieldset>
-        <legend>Extra Items</legend>
+        <legend>Preferred Visit Day</legend>
 
-        <input type="checkbox" value="fries"> French Fries<br>
-        <input type="checkbox" value="drink"> Soft Drink<br>
-        <input type="checkbox" value="dessert"> Dessert<br>
+        <input type="checkbox" value="mon"> Monday<br>
+        <input type="checkbox" value="wed"> Wednesday<br>
+        <input type="checkbox" value="fri"> Friday<br>
 
       </fieldset>
 
       <br>
-      <input type="submit" value="Place My Order">
+      <input type="submit" value="Book My Appointment">
 
     </form>
 
