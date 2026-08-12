@@ -21,13 +21,12 @@ body {
     );
     border-radius: 16px;
     padding: 20px;
-    text-align: center;
     color: white;
     margin-bottom: 20px;
 }
 
 .fact-card {
-    background-color: rgb(25, 25, 90);
+    background-color: rgb(87, 87, 167);
     border-radius: 12px;
     color: white;
     padding: 20px;
@@ -50,7 +49,7 @@ body {
 
 @keyframes twinkle {
     from {
-        background-color: rgb(255, 170, 0);
+        background-color: rgb(189, 73, 7);
     }
     to {
         background-color: rgb(255, 255, 100);
